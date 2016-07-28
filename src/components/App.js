@@ -56,7 +56,7 @@ class App extends React.Component {
 	_getPosts(category) {
 		//retrieve data
 		const params = `?filter[category_name]=${ category }` || '',
-			url = `http://robin:8888/wp-json/wp/v2/posts${ params }`;
+			url = `https://robinjulius.com/blog/wp-json/wp/v2/posts${ params }`;
 		
 		this.serverRequest = $.getJSON(url, function(data) {
 		  this.setState({ posts: data }); //set state with new data

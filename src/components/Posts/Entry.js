@@ -28,7 +28,7 @@ class Entry extends React.Component {
 
 		//retrieve data
 		const params = `/${ media }`,
-			url = `http://robin:8888/wp-json/wp/v2/media${ params }`;
+			url = `https://robinjulius.com/blog/wp-json/wp/v2/media${ params }`;
 		
 		this.serverRequest = $.getJSON(url, function(data) {
 		  this.setState({ media: data }); //set state with new data

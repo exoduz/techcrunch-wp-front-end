@@ -13,20 +13,19 @@ The URL for the API has to be changed in 2 places `js/components/App.js` and `js
 ## Demo ##
 [https://robinjulius.com/work/techcrunch](https://robinjulius.com/work/techcrunch)
 
+## Notes ##
+- Using something like dotenv to declare variables to be used within the React components (this applies mostly to the URL of the API)
+- Loading screen when Ajax call initiated for posts.
+- Date formatting on posts.
+- Post categories (currently multiple category retrieval not supported by WP REST API v2... yet).
+- Caching uses `setState` in `React` which uses Web Sockets, but could use something on the WordPress side or localStorage / sessionStorage.
+
 ## Assumptions ##
 - Data used is dummy data.
 - Just the posts, no sidebar, etc.
 - No pagination was implemented.
 - No need for individual post page to be created.
 - Once built, it should work as a theme but won't have access to global functions or hooks in WordPress.
-
-## Could do better ##
-- Using something like dotenv to declare variables to be used within the React components (this applies mostly to the URL of the API)
-- Loading screen when Ajax call initiated for posts.
-- Get author info.
-- Get category info.
-- Date formatting on posts.
-- Post categories (currently multiple category retrieval not supported by WP REST API v2... yet)
 
 ## Used ##
 - [ReactJS](https://facebook.github.io/react/)
