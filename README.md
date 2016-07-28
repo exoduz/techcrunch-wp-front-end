@@ -10,6 +10,9 @@ You can use a Wordpress theme, and you are welcome to use `SASS` (or any `CSS` p
 ## Installation ##
 The URL for the API has to be changed in 2 places `js/components/App.js` and `js/components/Posts/Entry.js`
 
+## Demo ##
+[https://robinjulius.com/work/techcrunch](https://robinjulius.com/work/techcrunch)
+
 ## Assumptions ##
 - Data used is dummy data.
 - Just the posts, no sidebar, etc.
