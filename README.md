@@ -14,12 +14,14 @@ You can use a Wordpress theme, and you are welcome to use `SASS` (or any `CSS` p
 
 ## Could do better ##
 - Loading screen when Ajax call initiated for posts.
-- Get author info
-- Get category info
+- Get author info.
+- Get category info.
+- Date formatting on posts.
 
 ## Used ##
-- ReactJS
-- Webpack
-- Bootstrap
-- Font Awesome
-- React router
+- [ReactJS](https://facebook.github.io/react/)
+- [Webpack](https://webpack.github.io/)
+- [Bootstrap](http://getbootstrap.com/)
+- [Font Awesome](http://fontawesome.io/)
+- [React router](https://github.com/reactjs/react-router)
+- [WP Rest API](http://v2.wp-api.org/)
