@@ -7,7 +7,7 @@ class Header extends React.Component {
 				<div className="container">
 					<div className="nav">
 						<a href="/" className="logo-link">
-							<img src="assets/img/logos/logo.svg" alt="TechCrunch Logo" />
+							<img src="assets/img/logos/logo.svg" alt="TechCrunch Logo" className="logo" />
 						</a>
 
 						<div className="tag-line">

@@ -37,6 +37,17 @@ header {
 	font-size: 1.9rem;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+	header { height: 90px; }
+	.logo-link { height: 50px; margin-right: 0; }
+	.logo { height: 50px; }
+	.tag-line { padding-top: 20px; font-size: 1.5rem; }
+}
+
+@media (max-width: 767px) {
+	.tag-line { display: none; }
+}
+
 .entry {
 	padding: 15px;
 	border-bottom: 1px solid #e8e8e8;
@@ -44,6 +55,14 @@ header {
 	.entry:last-child {
 		border-bottom: 0;
 	}
+
+.entry .post-image { float: right; margin-left: 15px; }
+.entry .image-caption { margin-top: 8px; font-size: 0.8rem; }
+
+@media (max-width: 767px) {
+	.article-entry { display: block; }
+	.post-image { display: block; float: none; width: 100%; }
+}
 
 footer {
 	margin-top: 35px;

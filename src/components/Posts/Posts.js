@@ -7,6 +7,10 @@ import Entry from './Entry';
 
 class Posts extends React.Component {
 
+	componentWillUnmount() {
+		this.serverRequest.abort(); //always abort requests
+	}
+
 	/**
 	 _renderEntry
 	 Output entry

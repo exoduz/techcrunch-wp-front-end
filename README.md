@@ -7,6 +7,9 @@ The request to the DB needs to be cached. The front end library will query the b
 
 You can use a Wordpress theme, and you are welcome to use `SASS` (or any `CSS` preprocessor), and `Bootstrap` but it's not mandatory. Make it nice visually but keep the design very simple.
 
+## Installation ##
+The URL for the API has to be changed in 2 places `js/components/App.js` and `js/components/Posts/Entry.js`
+
 ## Assumptions ##
 - Data used is dummy data.
 - Just the posts, no sidebar, etc.
@@ -15,10 +18,12 @@ You can use a Wordpress theme, and you are welcome to use `SASS` (or any `CSS` p
 - Once built, it should work as a theme but won't have access to global functions or hooks in WordPress.
 
 ## Could do better ##
+- Using something like dotenv to declare variables to be used within the React components (this applies mostly to the URL of the API)
 - Loading screen when Ajax call initiated for posts.
 - Get author info.
 - Get category info.
 - Date formatting on posts.
+- Post categories (currently multiple category retrieval not supported by WP REST API v2... yet)
 
 ## Used ##
 - [ReactJS](https://facebook.github.io/react/)

@@ -45,7 +45,7 @@ class App extends React.Component {
 	}
 
 	componentWillUnmount() {
-		this.serverRequest.abort();
+		this.serverRequest.abort(); //always abort requests
 	}
 
 	/**
