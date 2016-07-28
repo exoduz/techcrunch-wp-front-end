@@ -45,10 +45,14 @@ header {
 }
 
 @media (max-width: 767px) {
+	header { height: 60px; padding: 15px 0; }
+	.logo-link { height: 30px; margin-right: 0; }
+	.logo { height: 30px; width: auto; }
 	.tag-line { display: none; }
 }
 
 .entry {
+	width: 100%;
 	padding: 15px;
 	border-bottom: 1px solid #e8e8e8;
 }
@@ -61,7 +65,7 @@ header {
 
 @media (max-width: 767px) {
 	.article-entry { display: block; }
-	.post-image { display: block; float: none; width: 100%; }
+	.post-image { display: block; float: none; width: 100%; margin-bottom: 12px; }
 }
 
 footer {
