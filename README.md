@@ -11,6 +11,8 @@ You can use a Wordpress theme, and you are welcome to use `SASS` (or any `CSS` p
 - Data used is dummy data.
 - Just the posts, no sidebar, etc.
 - No pagination was implemented.
+- No need for individual post page to be created.
+- Once built, it should work as a theme but won't have access to global functions or hooks in WordPress.
 
 ## Could do better ##
 - Loading screen when Ajax call initiated for posts.

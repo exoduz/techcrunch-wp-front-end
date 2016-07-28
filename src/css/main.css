@@ -50,6 +50,7 @@ footer {
 	padding: 1.5em 1em 2em;
 	background: #282e28;
 	color: #a5a5a5;
+	font-size: 0.85rem;
 }
 footer a { color: #a5a5a5; }
 	footer a:hover, footer a:focus { color: #fff; }
