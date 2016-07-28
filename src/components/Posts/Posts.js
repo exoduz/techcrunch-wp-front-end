@@ -12,13 +12,13 @@ class Posts extends React.Component {
 	 Output entry
 	 @params entry { object } entry data
 	*/
-	_renderEntry(entry) {
-		const { id } = entry;
+	_renderEntry(data) {
+		const { id } = data;
 
 		return (
 			<Entry
 				key={ id }
-				entry={ entry }/>
+				post={ data }/>
 		)
 	}
 
@@ -27,7 +27,9 @@ class Posts extends React.Component {
 
 		return (
 			<section id="posts">
-				{ posts.map((entry) => this._renderEntry(entry)) }
+				<div className="container">
+					{ posts.map((data) => this._renderEntry(data)) }
+				</div>{/* .container */}
 			</section>
 		)
 	}

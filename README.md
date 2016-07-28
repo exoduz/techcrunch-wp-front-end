@@ -12,6 +12,11 @@ You can use a Wordpress theme, and you are welcome to use `SASS` (or any `CSS` p
 - Just the posts, no sidebar, etc.
 - No pagination was implemented.
 
+## Could do better ##
+- Loading screen when Ajax call initiated for posts.
+- Get author info
+- Get category info
+
 ## Used ##
 - ReactJS
 - Webpack

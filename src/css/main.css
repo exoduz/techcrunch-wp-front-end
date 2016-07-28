@@ -1,20 +1,20 @@
-/**
- * Robin Website v2.0.0 (https://robinjulius.com)
- */
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic');
 
 html, body {
-	background: #ececec;
+	background: #f9f9f9;
 	color: #3e433e;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;;
-	font-size: 13px;
+	font-size: 14.5px;
 }
 
-a { color: #089E00; }
+a { color: #089E00; cursor: pointer; }
 a:hover, a:focus { color: #3e433e; text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 { color: #06274b; }
+
+h3 a { color: #3e433e; }
+	h3 a:hover, h3 a:focus { color: #089E00; }
 
 header {
 	height: 125px;
@@ -37,7 +37,13 @@ header {
 	font-size: 1.9rem;
 }
 
+.entry {
+	padding: 15px;
+	border-bottom: 1px solid #e8e8e8;
+}
+
 footer {
+	margin-top: 35px;
 	padding: 1.5em 1em 2em;
 	background: #282e28;
 	color: #a5a5a5;
