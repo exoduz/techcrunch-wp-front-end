@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, browserHistory } from 'react-router';
 
+/**
+ React components
+*/
 import App from './components/App';
 import NotFound from './components/Errors/NotFound';
 

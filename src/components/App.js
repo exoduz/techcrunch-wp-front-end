@@ -27,14 +27,47 @@ require('../css/print.css');
  React components
 */
 import Header from './Layout/Header';
+import Posts from './Posts/Posts';
 import Footer from './Layout/Footer';
 
 
 class App extends React.Component {
+	constructor() {
+		super();
+
+		this.state = {
+      posts: []
+    }
+	}
+
+	componentDidMount() {
+		this._getPosts('techcrunch');
+	}
+
+	componentWillUnmount() {
+		this.serverRequest.abort();
+	}
+
+	/**
+	 _getPosts
+	 Get posts
+	 @params category { string } category to retrieve
+	*/
+	_getPosts(category) {
+		//retrieve data
+		const params = `?filter[category_name]=${ category }` || '',
+			url = `http://robin:8888/wp-json/wp/v2/posts${ params }`;
+		
+		this.serverRequest = $.getJSON(url, function(data) {
+		  this.setState({ posts: data }); //set state with new data
+		}.bind(this));
+	}
+
 	render() {
 		return (
 			<div>
 				<Header />
+				<Posts posts={ this.state.posts } />
 				<Footer />				
 			</div>
 		)
