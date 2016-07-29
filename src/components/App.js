@@ -58,9 +58,19 @@ class App extends React.Component {
 		const params = `?filter[category_name]=${ category }` || '',
 			url = `https://robinjulius.com/blog/wp-json/wp/v2/posts${ params }`;
 		
-		this.serverRequest = $.getJSON(url, function(data) {
-		  this.setState({ posts: data }); //set state with new data
-		}.bind(this));
+		//check localStorage
+		var posts = JSON.parse(localStorage.getItem('posts'));
+
+		if (!posts) {
+			//no localStorage, retrieve data, then setState
+			this.serverRequest = $.getJSON(url, function(data) {
+				posts = localStorage.setItem('posts', JSON.stringify(data));
+			  this.setState({ posts: data }); //set state with new data
+			}.bind(this));
+		} else {
+			//localStorage present, setState from localStorage
+			this.setState({ posts: posts });
+		}
 	}
 
 	render() {
